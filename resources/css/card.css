@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+@media (min-width:1000px) {
+
+    /* Ekran boyutu > 1000 piksel olduğunda  */
+    * {
+        margin: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        background: #c7cee1;
+        overflow-y: scroll;
+
+    }
+
+    body .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 4px 0;
+    }
+
+    body .container .card {
+        position: relative;
+        min-width: 400px;
+        height: 500px;
+        box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2),
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin: 3px;
+        transition: 0.5s;
+    }
+
+
+    body .container .card .box {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background: #dee0e6;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    /* body .container .card .box:hover {
+  transform: translateY(-50px);
+} */
+
+    body .container .card .box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    body .container .card .box .content {
+
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    body .container .card .box .pie {
+        position: relative;
+        margin: auto;
+        max-width: 50%;
+    }
+
+}
+
+
+
+
+@media (max-width:1000px) {
+    /* ekran boyutu <= 1000 piksel olduğunda */
+
+    * {
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+
+
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        background: #c7cee1;
+
+    }
+
+    body .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 4px 0;
+
+    }
+
+    body .container .card {
+        position: relative;
+        min-width: 600px;
+        min-height: 800px;
+        box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2),
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin: 3px;
+        transition: 0.5s;
+        align-items: center;
+    }
+
+    body .container .card .box {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background: #dee0e6;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+
+    }
+
+    body .container .card .box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    body .container .card .box .content {
+        width: 700px;
+    }
+
+    body .container .card .box .pie {
+        position: relative;
+        margin: auto;
+        max-width: 80%;
+    }
+
+}
