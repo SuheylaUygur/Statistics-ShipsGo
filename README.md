@@ -10,8 +10,7 @@
 This project allows you to practice converting a mysql query to a laravel database query and returning the data as json response from the controller and visualizing it with chart.
 
 ```diff
-! On output page, there are some statistics that observed as a result of querying the database.
-
+- On output page, there are some statistics that observed as a result of querying the database.
 + The first statistics query gives the number of requests in the last six months
 + The second statistics shows the eight most used carriers in the last six months
 + The last two statistics give the five most used ports of loading and five ports of discharges for a company
